@@ -106,7 +106,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     @Override
     public void onRequestError(Object object) {
         showLoading(false);
-        //TODO mostrar mensaje de Error
     }
 
     private void gotoHome() {
