@@ -8,14 +8,15 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.thedeveloperworldisyours.mvpandroid.R;
 import com.thedeveloperworldisyours.mvpandroid.model.response.LoginResponse;
 import com.thedeveloperworldisyours.mvpandroid.view.LoginView;
-
 import org.json.JSONObject;
-
 import java.util.HashMap;
 import java.util.Map;
+import com.android.volley.VolleyError;
 
 /**
  * Created by javiergonzalezcabezas on 4/11/15.
@@ -49,7 +50,7 @@ public class LoginPresenter {
                     public void onResponse(JSONObject response)
                     {
                         Log.i(TAG, "response "+response.toString());
-                        GsonBulder gsonb = new GsonBuilder();
+                        GsonBuilder gsonb = new GsonBuilder();
                         Gson gson = gsonb.create();
 
                         loginResponse=null;
