@@ -5,10 +5,7 @@
   
   How to work MVP on Android this
   
-  
-  <head>
-<link rel="stylesheet" type="text/css" href="theme.css">
-</head>
+  http://thedeveloperworldisyours.com/uncategorized/model-view-presenter-on-android/
   
 # Requirements
 
